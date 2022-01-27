@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			td { padding: 20px 100px 0 0;}
+			table {background-color: darkgrey; border-width: thin; border-style: solid; border-color: black;}
+			h1 {color:red; text-align:center;}
+			h2 {color: blue; text-align:center;}
+			.center {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			a {
+				text-align: center;
+				color: crimson;
+				text-decoration: none;
+			}
+			h3 {
+				text-align: center;
+				text-decoration: none;
+			}
+		</style>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<title>Bài 2</title>
+	</head>
+	<body>
+	<h1>BÀI THỰC HÀNH MÔN LẬP TRÌNH WEB</h1>
+	<h2>Họ và tên: Thạch Thị Maly</h2>
+	<h2>MSSV: B1706836</h2>
+	<h2>Nhóm lập trình web: chiều thứ 4</h2>
+	<h2 style="color: red">Đăng ký tài khoản mới</h2>
+	<p style="text-align:center">Vui lòng điền đầy đủ thông tin bên dưới để đăng ký tài khoản mới</p>
+	<form action="" method="POST">	
+		<table class="center">
+			<tr>
+				<!--type = "text"-->
+				<td>
+					<label for="user">Tên đăng nhập</label>
+				</td>
+				<td>
+					<input type="text" name="user" id="user">
+				</td>
+			</tr>
+			<tr>
+				<!--type = "password"-->
+				<td>
+					<label for="pass">Mật khẩu</label>
+				</td>
+				<td>
+					<input type="password" name="password" id="pass">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="repass">Gõ lại mật khẩu</label>
+				</td>
+				<td>
+					<input type="password" name="password" id="repass">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="repass">Hình đại diện</label>
+				</td>
+				<td>
+					<label for="myfile"></label>
+					<input type="file" id="myfile" name="myfile">
+				</td>
+			</tr>
+			<tr>
+				<!--type = "radio"-->
+				<td>
+					<label>Giới tính</label>
+				</td>
+				<td>
+					<label for="male">Nam</label>
+					<input type="radio" name="gender" id="male" value="male">
+					<label for="female">Nữ</label>
+					<input type="radio" name="gender" id="female" value="female">
+					<label for="khac">Khác</label>
+					<input type="radio" name="gender" id="khac" value="khac">
+				</td>
+			</tr>
+			<tr>
+				<!--drop down list-->
+				<td>
+					<label for = "job">Nghề nghiệp</label>
+				</td>
+				<td>
+					<select name="job">
+						<option value="student">Học sinh</option>
+						<option value="sinhvien">Sinh viên</option>
+						<option value="teacher">Giáo viên</option>
+						<option value="khac">Khác</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<!--type = "checkbox"-->
+				<td rowspan="3">
+					<label for="favourite">Sở thích</label>
+				</td>
+				<td>
+					<label for ="sport">Thể thao</label>
+					<input type="checkbox" name="favourite[]" id="sport" value="sport">
+					<label for="travel">Du lịch</label>
+					<input type="checkbox" name="favourite[]" id="travel" value="travel">
+					<label for="music">Âm nhạc</label>
+					<input type="checkbox" name="favourite[]" id="music" value="music">
+				</td>
+			<tr>
+				<td>
+					<label for="fashion">Thời trang</label>
+					<input type="checkbox" name="favourite[]" id="fashion" value="fashion">
+				</td>
+			</tr>
+			</tr>
+			<tr>
+				<td>
+					<!--type="submit"-->
+					<input type="submit" value="Đăng ký">
+					<!--type="reset"-->
+					<input type="reset" value="Làm lại">
+				</td>
+			</tr>
+		</table>
+	</form>
+	<a href="/index.html"><h3>Trở về trang chủ</h3></a>
+	</body>
+</html>

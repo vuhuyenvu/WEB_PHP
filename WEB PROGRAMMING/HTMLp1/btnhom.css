@@ -1,0 +1,11 @@
+h1 {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    background-image: url('tuoitre.jpg'); width: 1000px; height: 80px;
+    color: white;
+    text-shadow: 2px 2px 5px yellow;
+    line-height: 80px;
+    font-size: 40px;
+    border:5px solid yellowgreen;
+}

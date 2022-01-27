@@ -1,0 +1,67 @@
+PHP (tuần 9)
+- có 3 cách chú thích /* */, #, //
+- kiểu tính ở thời điểm gán trị
+- phép nối chuỗi trong php là dấu chấm
+- mã hóa bằng md5 ko thể mã hóa ngược lại
+- Mảng dạng tự điển sử dụng nhiều trong môn học
+ + truy xuất thông qua khóa
+ $ages['Lam'] + $ages['Viet'] => dùng nháy đơn để tránh trường hợp kết thúc chuỗi
+- Lệnh điều khiển: foreach duyệt qua hết tất cả các phần tử của mảng
+- PHP chứa html, text, script php nên có thể lưu đuôi php or html.
+- Một tập tin php: lấy data về server, làm việc với cơ sở dữ liệu
+- Trong form có hai thuộc tính quan trọng là action và method
+  + .php
+  + .html 
+=> name; phương thức GET hoặc POST,mảng; action: tên .php
+- php xử lý trên server và trả về thuần html
+- để mở file xử lý được phải mở qua localhost
+form bai 2 buoi thuc hanh 1
+- kiểm tra dữ liệu không hợp lệ có thể dùng javascript
+- giới tính (gt trả về là của value)
+$st = "";
+foreach ($_POST['sothich'] as $value) {
+	$st = $st . $value 
+}
+- php implode
+- uopload hình dại diện (xem slide 45 phần upload.html) enctype.... =>lấy file hình
+$FILES['avatar']['name']=> tên tập tin
+$FILES['avatar']['tmp_name'] => là nội dung tập tin
+$duongdan = "thumuc/".iphone12.jpg
+vd: $duongdan = "./avatar/".$_FILES['hinhdaidien']['name'];
+move_uploaded_file...
+-LÀM VIỆC VỚI CSDL
+ // bước 1: tạo nối kết
+vd:	$con = new mysqli("localhost","root","","ct428");
+	$con->set_charset("utf8");
+//buoc 2: viet cau sql
+$sql = "INSERT INTO persons(FirstName, LastName, Age) VALUES ('$ten', '$ho', $tuoi)";
+echo $sql;
+nếu lỗi copy qua console bên phpmyadmin
+thêm dấu nháy để tương thích kiểu dữ liệu giữa php và sql
+//buoc 3: truy van
+$con->query($sql);
+//buoc cuoi: dong noi ket
+$con -> close();
+
+cách khác của bước 2, 3
+$sql = "SELECT *FROM persons";
+echo $sql;
+$result = $con->query($sql);
+buoc 4: xu ly ket qua truy van
+echo "<table border=1>";
+while ($row = $result->fetch_assoc()) {
+	//lam gi voi moi dong
+	//echo $row['FirstName']."nam nay ".
+	echo "<tr>
+		<td>".$row['ID']."</td>
+		...
+		//gia su muon hien hinh thi de trong the img
+		<td><img src= ".$row['avatar']."></td>
+	</tr>"; 
+}
+echo "</table>"
+
+
+
+
+ 

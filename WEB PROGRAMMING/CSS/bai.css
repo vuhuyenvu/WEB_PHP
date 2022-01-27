@@ -1,0 +1,17 @@
+p,a {
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: none;
+}
+p a{
+    color:green;
+    font-weight: bold;
+}
+a{
+    color:green;
+}
+
+a:hover {
+    color:red;
+}
+

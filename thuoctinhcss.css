@@ -1,0 +1,17 @@
+#Demo{
+    font-family:"Times New Roman", Times, serif;
+    /* font-size: 20px ;
+    letter-spacing: 4px;
+    line-height: 2em;
+    word-spacing: 5px;*/
+    text-align: justify; 
+    border : 2px solid blue;   /* solid : dong ke bth */
+    width: 400px;
+    margin: 10px auto; 
+    padding: 15px 5px 5px 20px;
+    float:right;
+    text-decoration: underline ;
+    
+    
+  
+}

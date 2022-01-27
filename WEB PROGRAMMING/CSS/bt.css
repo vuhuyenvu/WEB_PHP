@@ -1,0 +1,13 @@
+h1 {
+    background-color: pink;
+}
+
+.tieude {
+    color: red;
+    text-shadow: 2px 2px 5px white;
+}
+
+#tieude3 {
+    color: white;
+    text-shadow: 2px 2px 5px red;
+}

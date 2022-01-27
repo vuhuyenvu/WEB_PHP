@@ -1,0 +1,6 @@
+div – viết tắt của division – là thẻ được dùng để
+ nhóm nhiều phần tử  HTML lại với nhau ,  
+và áp dụng các kiểu CSS cho nhiều phần tử cùng một lúc
+Những thể không được chứa bên trong thẻ div bao gồm:
+ <HTML></HTML>, <meta></meta>, 
+<body></body>, <title></title>, <link></link>.

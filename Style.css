@@ -1,0 +1,32 @@
+/* #sample4{
+    width : 500px;
+    margin: 15px auto;
+    background: #000;
+    color: #fff;
+    padding: 20px;
+} */
+#demoID{
+    margin : 0 auto;
+    width:400px;
+    height:100px;
+    background: red 
+
+}
+.demoClass{
+    margin : 10px auto;
+    width:400px;
+    height:100px;
+    background: blue
+
+}
+body{
+    background: gray;
+}
+p{
+    margin : 0 auto;
+    width:400px;
+    height:100px;
+    padding : 3px;
+    background: #fff
+ 
+}
